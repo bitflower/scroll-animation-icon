@@ -35,6 +35,9 @@
     "url": "https://github.com/bitflower/scroll-animation-icon"
   },
   "homepage": "https://www.bitflower.net",
+  "publishConfig": {
+    "access": "public"
+  },
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
