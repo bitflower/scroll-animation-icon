@@ -10,9 +10,14 @@ export class ScrollAnimationIcon {
   @Prop() color: string;
 
   private getStyle(): any {
-    return {
-      'box-shadow': `inset 0 0 0 1px ${this.color}`
-    };
+    if (this.color) {
+      return {
+        'box-shadow': `inset 0 0 0 1px ${this.color}`
+      };
+    } else {
+      return {};
+    }
+
   }
 
   render() {
