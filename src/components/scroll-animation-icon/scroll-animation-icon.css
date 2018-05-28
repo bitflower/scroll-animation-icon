@@ -1,19 +1,26 @@
+  .icon-scroll-container {
+    width: var(--main-width);
+    position: relative;
+    height: var(--main-height);
+  }
+
+  
   .icon-scroll,
   .icon-scroll:before {
     position: absolute;
     left: 50%;
   }
   .icon-scroll {
-    width: 40px;
-    height: 70px;
-    box-shadow: inset 0 0 0 1px #FFFFFF; /* var(--main-color);*/
+    width: var(--main-width);
+    height: var(--main-height);
+    box-shadow: inset 0 0 0 1px var(--main-color);
     border-radius: 25px;
   }
   .icon-scroll:before {
     content: '';
     width: 8px;
     height: 8px;
-    background: #FFFFFF; /* var(--main-color);*/
+    background: var(--main-color);
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;

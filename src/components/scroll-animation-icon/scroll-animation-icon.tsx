@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Element, Prop } from '@stencil/core';
 
 @Component({
   tag: 'scroll-animation-icon',
@@ -7,23 +7,23 @@ import { Component, Prop } from '@stencil/core';
 })
 export class ScrollAnimationIcon {
 
-  @Prop() color: string;
+  @Element()
+  private element: HTMLElement;
 
-  private getStyle(): any {
+  @Prop()
+  color: string;
+
+  protected componentWillLoad(): void {
     if (this.color) {
-      // Print color
-      return {
-        'box-shadow': `inset 0 0 0 1px ${this.color}`
-      };
-    } else {
-      return {};
+      this.element.style.setProperty("--main-color", this.color);
     }
-
   }
 
   render() {
     return (
-      <div class='icon-scroll' style={this.getStyle()}></div>
+      <div class='icon-scroll-container'>
+        <div class='icon-scroll'></div>
+      </div>
     );
   }
 }
