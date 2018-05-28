@@ -18,7 +18,7 @@ describe('scroll-animation-icon', () => {
     });
 
     it('should work without parameters', () => {
-      expect(element.innerHTML.trim()).toEqual('<div class=\"icon-scroll\" data-scroll-animation-icon=\"\"></div>');
+      expect(element.innerHTML.trim()).toEqual('<div class=\"icon-scroll-container\" data-scroll-animation-icon=\"\"><div class=\"icon-scroll\" data-scroll-animation-icon=\"\"></div></div>');
     });
 
     // it('should work with a word color parameter', async () => {
