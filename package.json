@@ -1,7 +1,7 @@
 {
-  "name": "my-component",
+  "name": "scroll-animation-icon",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "An animated icon stimulating scrolling",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -19,7 +19,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "^0.9.1",
+    "@stencil/core": "^0.9.5",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
     "@types/jest": "^21.1.1",
@@ -27,14 +27,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/bitflower/scroll-animation-icon.git"
   },
-  "author": "Ionic Team",
+  "author": "Matthias Max",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/bitflower/scroll-animation-icon"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://www.bitflower.net",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
