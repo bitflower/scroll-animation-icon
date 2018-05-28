@@ -18,32 +18,20 @@ describe('scroll-animation-icon', () => {
     });
 
     it('should work without parameters', () => {
-      expect(element.textContent.trim()).toEqual('Hello, World! I\'m');
+      expect(element.innerHTML.trim()).toEqual('<div class=\"icon-scroll\" style=\"box-shadow: inset 0 0 0 1px #FFFFFF;\" data-scroll-animation-icon=\"\"></div>');
     });
 
     it('should work with a word color parameter', async () => {
       element.color = 'red';
       await testWindow.flush();
-      expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter');
+      expect(element.innerHTML.trim()).toEqual('<div class=\"icon-scroll\" style=\"box-shadow: inset 0 0 0 1px red;\" data-scroll-animation-icon=\"\"></div>');
     });
 
     it('should work with a hex color parameter', async () => {
       element.color = '#CCCCCC';
       await testWindow.flush();
-      expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter');
+      expect(element.innerHTML.trim()).toEqual('<div class=\"icon-scroll\" style=\"box-shadow: inset 0 0 0 1px #CCCCCC;\" data-scroll-animation-icon=\"\"></div>');
     });
 
-    // it('should work with a last name', async () => {
-    //   element.last = 'Parker';
-    //   await testWindow.flush();
-    //   expect(element.textContent.trim()).toEqual('Hello, World! I\'m  Parker');
-    // });
-
-    // it('should work with both a first and a last name', async () => {
-    //   element.first = 'Peter'
-    //   element.last = 'Parker';
-    //   await testWindow.flush();
-    //   expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter Parker');
-    // });
   });
 });
