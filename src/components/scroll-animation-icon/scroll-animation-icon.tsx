@@ -11,6 +11,7 @@ export class ScrollAnimationIcon {
 
   private getStyle(): any {
     if (this.color) {
+      // Print color
       return {
         'box-shadow': `inset 0 0 0 1px ${this.color}`
       };
