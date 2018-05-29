@@ -1,6 +1,6 @@
 {
   "name": "scroll-down-icon",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An animated icon stimulating scrolling",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
