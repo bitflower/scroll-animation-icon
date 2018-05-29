@@ -1,6 +1,7 @@
 {
   "name": "scroll-animation-icon",
   "version": "0.0.5",
+  "private": false,
   "description": "An animated icon stimulating scrolling",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
