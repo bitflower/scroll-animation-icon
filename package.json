@@ -1,7 +1,6 @@
 {
-  "name": "scroll-animation-icon",
-  "version": "0.0.8",
-  "private": false,
+  "name": "scroll-down-icon",
+  "version": "0.0.1",
   "description": "An animated icon stimulating scrolling",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -28,17 +27,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitflower/scroll-animation-icon.git"
+    "url": "git+https://github.com/bitflower/scroll-down-icon.git"
   },
   "author": "Matthias Max",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bitflower/scroll-animation-icon"
+    "url": "https://github.com/bitflower/scroll-down-icon"
   },
   "homepage": "https://www.bitflower.net",
-  "publishConfig": {
-    "access": "public"
-  },
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"

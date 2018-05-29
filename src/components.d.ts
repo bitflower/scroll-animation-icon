@@ -27,30 +27,30 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface ScrollAnimationIcon {
+    interface ScrollDownIcon {
       'color': string;
     }
   }
 
-  interface HTMLScrollAnimationIconElement extends StencilComponents.ScrollAnimationIcon, HTMLStencilElement {}
+  interface HTMLScrollDownIconElement extends StencilComponents.ScrollDownIcon, HTMLStencilElement {}
 
-  var HTMLScrollAnimationIconElement: {
-    prototype: HTMLScrollAnimationIconElement;
-    new (): HTMLScrollAnimationIconElement;
+  var HTMLScrollDownIconElement: {
+    prototype: HTMLScrollDownIconElement;
+    new (): HTMLScrollDownIconElement;
   };
   interface HTMLElementTagNameMap {
-    'scroll-animation-icon': HTMLScrollAnimationIconElement;
+    'scroll-down-icon': HTMLScrollDownIconElement;
   }
   interface ElementTagNameMap {
-    'scroll-animation-icon': HTMLScrollAnimationIconElement;
+    'scroll-down-icon': HTMLScrollDownIconElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'scroll-animation-icon': JSXElements.ScrollAnimationIconAttributes;
+      'scroll-down-icon': JSXElements.ScrollDownIconAttributes;
     }
   }
   namespace JSXElements {
-    export interface ScrollAnimationIconAttributes extends HTMLAttributes {
+    export interface ScrollDownIconAttributes extends HTMLAttributes {
       'color'?: string;
     }
   }

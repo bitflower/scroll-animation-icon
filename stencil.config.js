@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'scroll-animation-icon',
+  namespace: 'scroll-down-icon',
   outputTargets: [
     {
       type: 'dist'

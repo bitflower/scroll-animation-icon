@@ -1,11 +1,11 @@
 import { Component, Element, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'scroll-animation-icon',
-  styleUrl: 'scroll-animation-icon.css',
+  tag: 'scroll-down-icon',
+  styleUrl: 'scroll-down-icon.css',
   shadow: true
 })
-export class ScrollAnimationIcon {
+export class ScrollDownIcon {
 
   @Element()
   private element: HTMLElement;
