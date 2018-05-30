@@ -14,6 +14,11 @@ export class ScrollDownIcon {
   color: string;
 
   protected componentWillLoad(): void {
+
+    // Make it work without the global CSS file
+    this.element.style.setProperty("----main-height", '70px');
+    this.element.style.setProperty("----main-width", '40px');
+
     if (this.color) {
       this.element.style.setProperty("--main-color", this.color);
     }
