@@ -21,6 +21,8 @@ export class ScrollDownIcon {
 
     if (this.color) {
       this.element.style.setProperty("--main-color", this.color);
+    } else {
+      this.element.style.setProperty("--main-color", '#FFFFFF');
     }
   }
 
